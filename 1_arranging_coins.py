@@ -14,3 +14,12 @@ class Solution:
                 break
 
         return count
+
+
+"""
+Time/Space Complexity = O(1)
+"""
+class Solution:
+    def arrangeCoins(self, n: int) -> int:
+        # using completing the square techinque
+        return int((2*n + 1/4)**0.5 - (1/2))
